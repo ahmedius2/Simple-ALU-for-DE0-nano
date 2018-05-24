@@ -1,0 +1,95 @@
+// Ahmet Soyyigit
+
+module  alu32(CLK, inp1, inp2, ALUop, out);
+	input  CLK;
+	input  [2:0]  ALUop;
+	input  [31:0] inp1;
+	input  [31:0] inp2;
+	output [31:0] out;
+	
+	// 2 states, non-multiplication or multiplication
+	reg state = 1'b0; // 0 is non-multiplication, 1 is multiplication
+	reg next_state = 1'b0;
+	reg multJustFinished = 1'b0;
+	reg [63:0] ALUResult;
+	wire multAddSignal;
+	integer multCounter = 0;
+	
+	assign out = ALUResult[63:32];
+	
+	// ALU operations (not states)
+	parameter ADD  = 3'b000;
+	parameter SUB  = 3'b001;
+	parameter MULT = 3'b010;
+	parameter AND  = 3'b011;
+	parameter OR   = 3'b100;
+	parameter NAND = 3'b101;
+	parameter NOR  = 3'b110;
+	parameter XOR  = 3'b111;
+	
+	// This is the 2 state FSM
+	always @(posedge CLK) begin
+		state <= next_state;
+		if(state) begin
+			if (multCounter == 32) begin
+				multJustFinished <= 1'b1;
+				multCounter <= 0;
+				state <= 1'b0;
+			end
+			else begin
+				multCounter <= multCounter + 1;
+			end
+		end
+		else begin 
+			multJustFinished <= 1'b0;
+		end
+		
+	end
+	
+	// This block represend combinational ALU
+	always @(inp1 or inp2 or ALUop or multCounter) begin
+		case(ALUop)
+			ADD: begin
+				ALUResult[63:32] = inp1 + inp2;
+			end
+			SUB: begin
+				ALUResult[63:32] = inp1 - inp2;
+			end
+			MULT: begin
+				ALUResult[63:32] = 32'h00000000;
+				ALUResult[32:1] = inp2; // to avoid extra one shift at beginning
+				next_state = 1'b1;
+			end
+			AND: begin
+				ALUResult[63:32] = inp1 & inp2;
+			end
+			OR: begin
+				ALUResult[63:32] = inp1 | inp2;
+			end
+			NAND: begin
+				ALUResult[63:32] = ~(inp1 & inp2);
+			end
+			NOR: begin
+				ALUResult[63:32] = ~(inp1 | inp2);
+			end
+			XOR: begin
+				ALUResult[63:32] = inp1 ^ inp2;
+			end
+			default: begin
+			
+			end
+		endcase
+		
+		// multiplication
+		if (state) begin
+			ALUResult[63:32] = ALUResult[63:32] + (ALUResult[0] ? inp1 : 0);
+			ALUResult = ALUResult >> 1;
+		end
+		if (multJustFinished) begin
+			ALUResult[63:32] = ALUResult[31:0];
+			next_state = 1'b0;
+		end
+
+	end
+	
+endmodule

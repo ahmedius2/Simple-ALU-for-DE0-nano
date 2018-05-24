@@ -1,0 +1,149 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'CLK'
+Slack : -4.732
+TNS   : -299.665
+
+Type  : Slow 1200mV 85C Model Setup 'ALUop[0]'
+Slack : -4.531
+TNS   : -128.314
+
+Type  : Slow 1200mV 85C Model Setup 'pushButton1'
+Slack : -2.294
+TNS   : -43.199
+
+Type  : Slow 1200mV 85C Model Setup 'pushButton2'
+Slack : -2.209
+TNS   : -43.798
+
+Type  : Slow 1200mV 85C Model Hold 'CLK'
+Slack : 0.344
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'pushButton2'
+Slack : 0.567
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'pushButton1'
+Slack : 0.591
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'ALUop[0]'
+Slack : 0.602
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -103.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'pushButton1'
+Slack : -3.000
+TNS   : -35.976
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'pushButton2'
+Slack : -3.000
+TNS   : -35.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ALUop[0]'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Setup 'CLK'
+Slack : -4.195
+TNS   : -261.938
+
+Type  : Slow 1200mV 0C Model Setup 'ALUop[0]'
+Slack : -3.906
+TNS   : -111.574
+
+Type  : Slow 1200mV 0C Model Setup 'pushButton1'
+Slack : -1.889
+TNS   : -34.304
+
+Type  : Slow 1200mV 0C Model Setup 'pushButton2'
+Slack : -1.807
+TNS   : -34.793
+
+Type  : Slow 1200mV 0C Model Hold 'CLK'
+Slack : 0.299
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'pushButton2'
+Slack : 0.510
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'pushButton1'
+Slack : 0.531
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'ALUop[0]'
+Slack : 0.573
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -103.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'pushButton1'
+Slack : -3.000
+TNS   : -35.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'pushButton2'
+Slack : -3.000
+TNS   : -35.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ALUop[0]'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Setup 'CLK'
+Slack : -2.947
+TNS   : -150.546
+
+Type  : Fast 1200mV 0C Model Setup 'ALUop[0]'
+Slack : -2.189
+TNS   : -60.542
+
+Type  : Fast 1200mV 0C Model Setup 'pushButton1'
+Slack : -0.862
+TNS   : -11.264
+
+Type  : Fast 1200mV 0C Model Setup 'pushButton2'
+Slack : -0.841
+TNS   : -11.964
+
+Type  : Fast 1200mV 0C Model Hold 'ALUop[0]'
+Slack : 0.077
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLK'
+Slack : 0.179
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'pushButton2'
+Slack : 0.302
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'pushButton1'
+Slack : 0.315
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -131.383
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'pushButton1'
+Slack : -3.000
+TNS   : -53.484
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'pushButton2'
+Slack : -3.000
+TNS   : -45.404
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ALUop[0]'
+Slack : -3.000
+TNS   : -9.030
+
+------------------------------------------------------------

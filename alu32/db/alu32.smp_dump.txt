@@ -1,0 +1,7 @@
+
+State Machine - |alu32interface|alu32:myALU32|state
+Name state.MULT_END_STATE state.MULT_SHIFT_STATE state.MULT_CONT_STATE state.COMB_STATE 
+state.COMB_STATE 0 0 0 0 
+state.MULT_CONT_STATE 0 0 1 1 
+state.MULT_SHIFT_STATE 0 1 0 1 
+state.MULT_END_STATE 1 0 0 1 

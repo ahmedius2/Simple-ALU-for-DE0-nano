@@ -1,0 +1,53 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/asoyyigit/Dropbox/AdvCompOrg/hw2/alu32/simulation/modelsim
+valu32
+!s110 1524410637
+!i10b 1
+!s100 1CFH7H<mLmTT2;_i[YQnd0
+I2Em2?E9R_A>n593Sb[90H3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1524410340
+8C:/Users/asoyyigit/Dropbox/AdvCompOrg/hw2/alu32/alu32.v
+FC:/Users/asoyyigit/Dropbox/AdvCompOrg/hw2/alu32/alu32.v
+L0 4
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1524410637.000000
+!s107 C:/Users/asoyyigit/Dropbox/AdvCompOrg/hw2/alu32/alu32.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/asoyyigit/Dropbox/AdvCompOrg/hw2/alu32|C:/Users/asoyyigit/Dropbox/AdvCompOrg/hw2/alu32/alu32.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/Users/asoyyigit/Dropbox/AdvCompOrg/hw2/alu32
+Z3 tCvgOpt 0
+valu32_testbench
+!s110 1524410648
+!i10b 1
+!s100 Z[1Nf=?;7;UN@@B<KI_5j0
+ID8@;9a4<foF2h73GNhPnI2
+R1
+R0
+w1524410589
+8C:/Users/asoyyigit/Dropbox/AdvCompOrg/hw2/alu32/alu32_testbench.v
+FC:/Users/asoyyigit/Dropbox/AdvCompOrg/hw2/alu32/alu32_testbench.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1524410648.000000
+!s107 C:/Users/asoyyigit/Dropbox/AdvCompOrg/hw2/alu32/alu32_testbench.v|
+!s90 -reportprogress|300|-work|work|C:/Users/asoyyigit/Dropbox/AdvCompOrg/hw2/alu32/alu32_testbench.v|
+!i113 1
+o-work work
+R3
